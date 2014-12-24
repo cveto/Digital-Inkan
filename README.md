@@ -1,6 +1,5 @@
 Digital-Inkan
 =============
-
 An Android application for creating digital signatures and storing them in a QR code. 
 Essentially it creates a printable digital document. 
 
@@ -11,6 +10,8 @@ Consists of 3 parts:
   
   Location of API and testing files:
   https://drive.google.com/folderview?id=0B_9mRsWNDu2rOGE2SHVnZTVUNWM
+  
+  To create your own certificate QR files, use PrintableRSACertificate APP in my reposritory.
 
 Made in:
   Android Studio 0.8.14
