@@ -1,0 +1,17 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- TextSize -->
+    <dimen name="TVtextSize">16sp</dimen>
+
+    <!-- Verification results -->
+    <dimen name="VRpaddingT">10sp</dimen>
+    <dimen name="VRpaddingL">10sp</dimen>
+    <dimen name="VRpaddingR">20sp</dimen>
+    <dimen name="VRtextSize">16sp</dimen>
+
+
+
+</resources>

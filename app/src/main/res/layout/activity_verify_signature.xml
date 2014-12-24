@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="csbslovenia.com.DInkan.verifySignature"
+    android:weightSum="5"
+    android:id="@+id/LL_verifySignature"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:id="@+id/TVdocument"
+        android:hint="@string/TVdocument"
+        android:scrollbars="vertical"
+        android:gravity="top"
+        android:layout_weight="1"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="csbslovenia.com.DInkan.verifySignature"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/BUTverify"
+            android:id="@+id/BUTverify"
+            android:onClick="scanSignature"
+            android:layout_weight="4"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/BUTexplain"
+            android:id="@+id/BUTexplain"
+            android:onClick="explain"
+            android:visibility="gone"
+            android:layout_weight="1"/>
+
+        </LinearLayout>
+</LinearLayout>

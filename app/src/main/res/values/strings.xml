@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">D-Inkan</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Activity names -->
+    <string name="title_activity_display_bitmap">Digital Inkan</string>
+    <string name="title_activity_create_document">Digital Inkan</string>
+    <string name="title_activity_verify_signature">Digital Inkan</string>
+
+    <!-- TEXT VIEWs -->
+    <string name="TVwelcome">Welcome to this awesome program!</string>
+    <string name="ETdocumentContent">Content in here is what will be signed.</string>
+    <string name="test">nothing, test.</string>
+    <string name="TVdocument">...</string>
+    <string name="TEST">        P O O B L A S T I L O
+        \n\nSpodaj podpisani Peter Božjastni, Emšo 09112001 pooblaščam gospoda Lupusa
+        Maksimusa, da lahko v mojem imenu s kupcem ki ga sam najde, sklene prodajno pogodbo
+        za stavbo št. 157, ležečo na parcelni številki 174/4, K.O. Šentjakob.
+        \nProdajna pogodba se lahko sklene le, če je način plačila gotovina oz. bančna transakcija.
+        Za uspešno oprevljeno storitev gospod Maksimus pobere 5% nagrade vrednosti prodajne pogodbe.
+        \n\nGospod Maksiums dobi nagrado šele po uspešni transakciji finančnih sredstev na moj račun.
+        To pooblastilo velja 12 mesec od datuma podpisa oziroma do mojega prisnega preklica.
+        \n\nDatum: 8. September 2014
+        \nKraj:  Šetrupert pri Sveti Gorici.</string>
+
+    <!-- BUTTONS -->
+    <string name="BUTcreateDoc">Create a document</string>
+    <string name="BUTsignDoc">Sign a document</string>
+    <string name="BUTcreateAndSignDoc">Create and sign a document</string>
+    <string name="BUTreadDoc">Read a document and verify signatures</string>
+    <string name="BUTcreateOnly">Create an unisgned document</string>
+    <string name="BUTsign">Sign</string>
+    <string name="BUTverify">Verify signature</string>
+    <string name="BUTverifyAgain">Verify again</string>
+    <string name="BUTexplain">Details of Verification</string>
+
+    <!-- Zxing after Scanning messages -->
+    <string name="invalidQRcode">QR code does not seem to be a valid PaperVault code.</string>
+    <string name="scanDocumentContents">Find the unsigned document.</string>
+    <string name="scanCertificate">"Find the signed certificate or public key from the signer.</string>
+
+    <!-- ZXing under scanner messages -->
+    <string name="findDocument">Find the document.</string>
+    <string name="findPrivateKey">Find your personal Private Key.</string>
+    <string name="findSignature">Find Signature.</string>
+
+    <!-- Menu items -->
+    <string name="print">Print</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+
+    <!-- On Bitmap -->
+    <string name="bitmapTitle">Digital document.</string>
+    <string name="bitmapSubTitle">Written in the barcode inside the large big square is a BYTE64 representation of an UTF-8 encoded string, which represent the digital document.</string>
+    <string name="bitmapUnderQRDoc">Digital document</string>
+    <string name="bitmapSignature">Signature</string>
+    <string name="bitmapFullName">Full Name</string>
+
+    <!-- Toasts -->
+    <string name="tooMuchText">Too many lines of text. \nThis doesn\'t mean there is too much text, it\'s just that the text with than many line breaks will not fit on the A4 paper.</string>
+    <string name="pleaseEnterText">Please enter some text.</string>
+    <string name="notValidRSAkey">Not a valid RSA key</string>
+    <string name="notASignature">This was not a Certificate (or a signature). Please try again</string>
+    <string name="canNotVerify">Could not Verify the signature.</string>
+    <string name="clueless">"No idea what the problem is"</string>
+
+    <!-- Alert Dialog -->
+    <string name="pleaseInsertPassword">Please insert password for your key.</string>
+    <string name="keyPasswordNeeded">"Key password needed"</string>
+    <string name="OK">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="wrongPassword">Wrong password or not a key.</string>
+
+    <!-- Explain verification results -->
+    <string name="documentAuthenticForRoot">        Signature verified. \n
+        Document is authentic and trusted. \n\n
+        This means that all the data you have scanned is authentic. The Certificate that you have provided
+        was checked against the root certificate (stored in this app) and the signature matched.\n\n
+
+        HOWEVER\n
+        Sometimes the identities can be stolen. When this happens, the user reports this to the government,
+        and the government revokes the certificate. If you are connected to the internet, this app checked
+        for this information and the result is displayed below.
+
+        ALSO\n
+        Dates of the signature are also sometimes forged or the same document is signed multiple times. Check also if the document was securely timestamped.</string>
+    <string name="documentAuthentic">        Signature verified. \n
+        Document is authentic under the condition, that you trust the Certificate.\n
+        What does this mean?:\n\n
+        All the data that you scanned is valid. However, without you providing the Public Certificate, the app can not check whether the
+        government is vouching for the identity. It can also not be checked if the certificate has been revoked.</string>
+    <string name="documentNotAuthentic">        Verification has failed.\n\n
+
+        This can mean 3 things:? \n
+        1: The document you provided is fraudulent - is fake.\n
+        2: You scanned the QR codes incorrectly.\n
+        3: The app might be malfunctioning.\n</string>
+    <string name="title_activity_verification_result">verificationResult</string>
+
+    <!-- verification result -->
+    <string name="VRsignBelongsToDoc">Signature belongs to document.</string>
+    <string name="VRsignBelongsToPubKey">Signature belongs to public key.</string>
+    <string name="VRpubKeyCertified">Public key is certified.</string>
+    <string name="VRcertTrusted">Certificate is trusted.</string>
+    <string name="VRcertNotRevoked">Certificate is not revoked.</string>
+    <string name="VRdocTimestamped">Document is timestamped.</string>
+    <string name="VRdocSignedWhileValidCert">Document was signed while certificate was valid.</string>
+    <string name="but_vrOkay">I undersand.</string>
+
+</resources>

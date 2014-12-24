@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="csbslovenia.com.DInkan" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".createDocument"
+            android:label="@string/title_activity_create_document"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name=".displayBitmap"
+            android:label="@string/title_activity_display_bitmap"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:name=".verifySignature"
+            android:label="@string/title_activity_verify_signature"
+            android:screenOrientation="sensorPortrait" >
+        </activity>
+        <activity
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/noTitleBar"
+            android:name=".verificationResult"
+            android:label="@string/title_activity_verification_result" >
+        </activity>
+    </application>
+
+</manifest>

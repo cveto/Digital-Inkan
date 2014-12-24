@@ -1,0 +1,22 @@
+/** SIGNATURE VERIFYING **/
+        /**FIRST GET DATE FROM CERTIFICATE**/
+        // is certificate still valid today?
+        // Document that is signed should have a date.
+        // NO! Signature should have the date!
+        // How do we know when the document was signed? We dont. The signature should contain this information. So everytime we sign something, we create a new document that contains
+        // The document that we are signing, date of signing, place of signing. Then we sign that document. But we cant verify the signature then.
+        // we CANT add data to the document and then sign it.
+        // We can however send our signature to a "SECURE SERVER", which takes the signature, and signes it, returns the date of the signature. So we have a confirmatino of date.
+        // This increases the size of hanko by 2. Who confirms the time?
+        // SCENARIO: Certificate is revoked. A docuement is signed, which has a date when the signature wasnt revoked yet. There is not date! GOD DAMMIT, how do we not forge the date!
+        // There is no other way.
+        // How about if you youself are vouching for the date and place of the signature? YOU CANT, what if it was revoked!!??
+        // So.. once the signature is done, its raw bytes go to a Secure Time Server, which issues a signed document about the time. It can stores the signature HASH online. Anyone can acces this website
+        // and search for it. Problem is only, if the certificate was not revoked. Time Server can also issue a signed document: Signature. Hash of signature. If this was a P2P technology, even better.
+        // Everyone gets this database about signatures - just like BITCOIN. It can not get modified, PEOPLE POWER!!!!
+        // Universities, faculties should start hosting this, then EVERYBODY.
+        // No problem with user--- nobody knows hash.
+
+        // So - the date of the signature should be inside the validity of the certificate
+        /**If certificate Revoked?**/
+        // if certificate was revoked - check WHEN it was revoked.

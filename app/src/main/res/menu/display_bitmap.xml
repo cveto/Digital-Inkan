@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="csbslovenia.com.DInkan.displayBitmap" >
+
+    <item android:id="@+id/share"
+        android:title="@string/share"
+        android:orderInCategory="3"
+        android:showAsAction="ifRoom"
+        android:onClick="shareBitmap"/>
+
+    <item android:id="@+id/save"
+        android:title="@string/save"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom"
+        android:onClick="saveBitmap"/>
+
+    <item android:id="@+id/print"
+        android:title="@string/print"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:onClick="printBitmap"/>
+
+</menu>

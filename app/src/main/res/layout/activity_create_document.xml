@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="csbslovenia.com.DInkan.createDocument"
+    android:weightSum="5"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxLength="2000"
+        android:padding="20dp"
+        android:id="@+id/ETdocumentContent"
+        android:hint="@string/ETdocumentContent"
+        android:scrollbars="vertical"
+        android:gravity="top"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/BUTsign"
+        android:id="@+id/BUTsign"
+        android:layout_weight="4"
+        android:onClick="scanPrivateKey"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="@string/BUTcreateOnly"
+        android:id="@+id/BUTcreateOnly"
+        android:layout_weight="4"
+        android:visibility="gone"
+        android:onClick="createUnsignedDoc"/>
+
+</LinearLayout>

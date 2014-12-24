@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".Main">
+
+
+    <TextView
+        android:textSize="@dimen/TVtextSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/TVwelcome"
+        android:gravity="center"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/BUTcreateDoc"
+        android:onClick="createDocumentOnly"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/BUTsignDoc"
+        android:onClick="signDocumentOnly"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/BUTcreateAndSignDoc"
+        android:onClick="createAndSignDocument"
+        android:layout_weight="1"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/BUTreadDoc"
+        android:onClick="verifySignature"
+        android:layout_weight="1"/>
+</LinearLayout>
