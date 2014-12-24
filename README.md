@@ -1,7 +1,7 @@
 Digital-Inkan
 =============
 
-An Android application for createing digital signatures and storing them in a QR code. 
+An Android application for creating digital signatures and storing them in a QR code. 
 Essentially it creates a printable digital document. 
 
 Consists of 3 parts:
